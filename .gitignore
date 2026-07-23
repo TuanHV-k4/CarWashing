@@ -13,6 +13,7 @@ CarWashing/**/obj/
 CarWashing/.tmp-feedback-build/
 CarWashing/.git.backup/
 CarWashing/API/appsettings*.json
+!CarWashing/API/appsettings.example.json
 
 # Generated frontend output and dependency caches
 CarWashing_FE/node_modules/
