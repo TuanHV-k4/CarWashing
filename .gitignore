@@ -1,0 +1,28 @@
+# Keep this repository limited to the runnable applications and product brief.
+*
+!.gitignore
+!PRODUCT.md
+!CarWashing/
+!CarWashing/**
+!CarWashing_FE/
+!CarWashing_FE/**
+
+# Generated .NET output
+CarWashing/**/bin/
+CarWashing/**/obj/
+CarWashing/.tmp-feedback-build/
+CarWashing/.git.backup/
+CarWashing/API/appsettings*.json
+
+# Generated frontend output and dependency caches
+CarWashing_FE/node_modules/
+CarWashing_FE/dist/
+CarWashing_FE/.vite/
+
+# Local IDE, test, and temporary artifacts
+**/.vs/
+**/.idea/
+**/*.user
+**/*.suo
+**/*.log
+**/~$*.docx

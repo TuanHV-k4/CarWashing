@@ -1,0 +1,10 @@
+.manager-dashboard-date { color: var(--muted); display: grid; font-size: .7rem; font-weight: 700; gap: .3rem; }
+.manager-dashboard-date input { min-height: 38px; }
+.manager-revenue-section { background: white; border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem; }
+.manager-revenue-section .section-heading p { color: var(--muted); font-size: .75rem; margin-top: .3rem; }
+.manager-revenue-grid { display: grid; gap: 0; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1.1rem; }
+.manager-revenue-card { border-right: 1px solid var(--line); display: grid; gap: .35rem; padding: .35rem 1.1rem; }
+.manager-revenue-card:first-child { padding-left: 0; }.manager-revenue-card:last-child { border-right: 0; }
+.manager-revenue-card > p, .manager-revenue-card > span { color: var(--muted); font-size: .72rem; }.manager-revenue-card > strong { color: var(--aqua-deep); font-size: 1.35rem; letter-spacing: -.035em; }
+.manager-revenue-card dl { display: grid; gap: .35rem; margin-top: .6rem; }.manager-revenue-card dl div { display: flex; font-size: .7rem; justify-content: space-between; }.manager-revenue-card dt { color: var(--muted); }.manager-revenue-card dd { margin: 0; font-weight: 700; }
+@media (max-width: 760px) { .manager-revenue-grid { grid-template-columns: 1fr; gap: .9rem; }.manager-revenue-card, .manager-revenue-card:first-child { border-bottom: 1px solid var(--line); border-right: 0; padding: 0 0 .9rem; }.manager-revenue-card:last-child { border-bottom: 0; padding-bottom: 0; } }

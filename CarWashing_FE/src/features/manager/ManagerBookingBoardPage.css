@@ -1,0 +1,34 @@
+.manager-booking-intro { color: var(--muted); font-size: .78rem; margin-top: .35rem; }
+.manager-date-filter { color: var(--muted); display: grid; font-size: .7rem; font-weight: 700; gap: .3rem; order: 2; }
+.manager-date-filter input { min-height: 38px; }
+.manager-booking-board { display: grid; gap: .85rem; grid-template-columns: repeat(6, minmax(218px, 1fr)); overflow-x: auto; padding-bottom: .6rem; }
+.manager-booking-column { background: oklch(.965 .009 230); border-radius: 10px; min-height: 440px; padding: .7rem; }
+.manager-booking-column--cancelled { background: oklch(.972 .014 55); }
+.manager-booking-column > header { align-items: center; display: flex; justify-content: space-between; margin: .2rem .2rem .75rem; }
+.manager-booking-column h3 { font-size: .74rem; }
+.manager-booking-column > header span { background: white; border-radius: 5px; color: var(--muted); font-size: .68rem; font-weight: 800; padding: .2rem .42rem; }
+.manager-booking-list { display: grid; gap: .65rem; }
+.manager-booking-card { background: white; border: 1px solid var(--line); border-radius: 9px; display: grid; gap: .55rem; padding: .78rem; }
+.manager-booking-card h4 { font-size: .83rem; }
+.manager-booking-card p, .manager-booking-note { color: var(--muted); font-size: .7rem; line-height: 1.45; }
+.manager-staff-summary, .manager-completion-summary { background: oklch(.97 .012 190); display: grid; gap: .2rem; padding: .55rem; }
+.manager-staff-summary strong, .manager-completion-summary strong { color: var(--aqua-deep); font-size: .67rem; }
+.manager-staff-summary span, .manager-completion-summary span { color: var(--ink); font-size: .68rem; line-height: 1.4; }
+.manager-booking-card--cancelled { gap: .5rem; }
+.manager-cancellation-summary { background: oklch(.972 .018 55); display: grid; gap: .4rem; padding: .55rem; }
+.manager-cancellation-summary > strong { color: oklch(.46 .13 45); font-size: .67rem; }
+.manager-cancellation-summary dl { display: grid; gap: .36rem; margin: 0; }
+.manager-cancellation-summary dl > div { display: grid; gap: .1rem; }
+.manager-cancellation-summary dt { color: var(--muted); font-size: .62rem; font-weight: 700; }
+.manager-cancellation-summary dd { color: var(--ink); font-size: .68rem; line-height: 1.4; margin: 0; overflow-wrap: anywhere; }
+.manager-booking-card .button { justify-content: center; min-height: 35px; width: 100%; }
+.manager-bay-choice { color: var(--muted); display: grid; font-size: .66rem; font-weight: 700; gap: .28rem; }
+.manager-bay-choice select { min-height: 34px; width: 100%; }
+.manager-staff-panel { align-items: center; display: grid; gap: .8rem; grid-template-columns: minmax(220px, 1fr) minmax(220px, 300px) auto auto; }
+.manager-staff-panel p { color: var(--muted); font-size: .72rem; margin-top: .25rem; }
+.manager-staff-panel > select, .manager-staff-panel > .button:nth-child(3) { display: none; }
+.manager-staff-options { align-self: center; border: 1px solid var(--line); border-radius: 8px; display: flex; flex-direction: column; gap: .35rem; height: auto; justify-content: flex-start; max-height: 168px; min-height: 0; overflow-y: auto; padding: .45rem .6rem; }
+.manager-staff-options label { align-items: center; color: var(--ink); display: flex; flex: 0 0 auto; font-size: .76rem; gap: .45rem; margin: 0; min-height: 28px; padding: 0; }
+.manager-staff-options input { accent-color: var(--aqua-deep); height: 15px; width: 15px; }
+.manager-staff-options p { margin: 0; }
+@media (max-width: 760px) { .manager-staff-panel { align-items: stretch; grid-template-columns: 1fr; } }

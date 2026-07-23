@@ -1,0 +1,2 @@
+namespace DataAccessLayer.Entity;
+public class BranchWorkSchedule { public Guid BranchWorkScheduleID { get; set; } = Guid.NewGuid(); public Guid BranchID { get; set; } public TimeSpan StartLocalTime { get; set; } = TimeSpan.FromHours(8); public TimeSpan EndLocalTime { get; set; } = TimeSpan.FromHours(19); public string TimezoneId { get; set; } = "Asia/Bangkok"; public int CheckoutGraceMinutes { get; set; } = 15; public Branch Branch { get; set; } = null!; }

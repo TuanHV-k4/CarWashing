@@ -1,0 +1,8 @@
+namespace BusinessLayer.Dtos.Operations;
+public class CreateBranchMembershipRequest { public Guid BranchId { get; set; } public Guid UserId { get; set; } public DateTime EffectiveFrom { get; set; } = DateTime.UtcNow.Date; }
+public class BranchMembershipResponse { public Guid Id { get; set; } public Guid BranchId { get; set; } public Guid UserId { get; set; } public string UserName { get; set; } = string.Empty; public bool IsActive { get; set; } }
+public class BranchMembershipDetailResponse { public Guid Id { get; set; } public string MembershipType { get; set; } = string.Empty; public Guid BranchId { get; set; } public string BranchName { get; set; } = string.Empty; public Guid UserId { get; set; } public bool IsActive { get; set; } public DateTime? EffectiveFrom { get; set; } public DateTime? EffectiveTo { get; set; } }
+public class ManagerBranchContextResponse { public Guid BranchId { get; set; } public string BranchName { get; set; } = string.Empty; }
+public class EndBranchMembershipRequest { public DateTime? EffectiveTo { get; set; } }
+public class AttendanceExceptionRequest { public string Reason { get; set; } = string.Empty; }
+public class ManagerAttendanceResponse { public Guid Id { get; set; } public Guid MembershipId { get; set; } public string StaffName { get; set; } = string.Empty; public string Status { get; set; } = string.Empty; public string? Note { get; set; } public DateTime? CheckedInAt { get; set; } public DateTime? CheckedOutAt { get; set; } public int LateMinutes { get; set; } public int EarlyLeaveMinutes { get; set; } public int OvertimeMinutes { get; set; } }

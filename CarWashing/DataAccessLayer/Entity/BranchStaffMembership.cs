@@ -1,0 +1,2 @@
+namespace DataAccessLayer.Entity;
+public class BranchStaffMembership { public Guid BranchStaffMembershipID { get; set; } = Guid.NewGuid(); public Guid BranchID { get; set; } public Guid UserID { get; set; } public DateTime EffectiveFrom { get; set; } = DateTime.UtcNow.Date; public DateTime? EffectiveTo { get; set; } public bool IsActive { get; set; } = true; public Branch Branch { get; set; } = null!; public User User { get; set; } = null!; }
